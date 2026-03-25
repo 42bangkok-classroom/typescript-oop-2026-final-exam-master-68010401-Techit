@@ -7,7 +7,7 @@ import { Product } from './product.interface';
 export class ProductService {
   findAll() {
     const filePath = path.join(process.cwd(), 'data', 'products.json');
-    const User : Product[] = JSON.parse(fs.readFileSync(filePath, `utf-8`));
+    const User: Product[] = JSON.parse(fs.readFileSync(filePath, `utf-8`));
     const Product = JSON.stringify(User);
     const response = {
       success: true,
