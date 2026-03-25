@@ -6,7 +6,7 @@
 export const answers = {
   c01: 'A',
   c02: 'B',
-  c03: '',
+  c03: 'B',
   c04: 'D',
   c05: 'A',
   c06: 'C',
