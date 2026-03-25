@@ -6,10 +6,11 @@ import * as fs from 'fs';
 export class ProductService {
   findAll() {
     const filePath = path.join(process.cwd(), 'data', 'products.json');
-    const data = JSON.parse(fs.readFileSync(filePath, `utf-8`));
+    const User = JSON.parse(fs.readFileSync(filePath, `utf-8`));
+    const Product = JSON.stringify(User);
     const response = {
       success: true,
-      data: data,
+      data: Product,
       message: 'Fetched products successfully',
     };
 
