@@ -1,6 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { version } from 'os';
-import { ApiResponse } from './interfaces/response.interface';
 
 @Injectable()
 export class AppService {
