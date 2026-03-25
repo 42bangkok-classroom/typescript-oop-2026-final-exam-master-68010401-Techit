@@ -7,7 +7,12 @@ export class ProductService {
   findAll() {
     const filePath = path.join(process.cwd(), 'data', 'products.json');
     const data = JSON.parse(fs.readFileSync(filePath, `utf-8`));
+    const response = {
+      success: true,
+      data: data,
+      message: 'Fetched products successfully',
+    };
 
-    return data;
+    return response;
   }
 }
